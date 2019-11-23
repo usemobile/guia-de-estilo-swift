@@ -208,9 +208,10 @@ func useReturn(value: Int)->Int {
 
 ```swift
 // Certo
-useFunction(firstValue: "Usemobile",
-            secondValue: usemobileValue(),
-            thirdValue: usemobileProperty)
+useFunction(
+    firstValue: "Usemobile",
+    secondValue: usemobileValue(),
+    thirdValue: usemobileProperty)
 
 
 // Errado
@@ -221,14 +222,17 @@ useFunction(firstValue: "Usemobile", secondValue: usmobileValue(), thirdValue: u
 
 ```swift
 // Certo
-useFunctionWithManyArguments(randomStringArgument: "Esse é um argumento do tipo String",
-                             randomArrayArgument: ["Esse é o primeiro argumeto de um array",
-                                                   "Poderia esse ser o segundo argumento do array?"],
-                             randomDictionaryArgument: ["primeiro valor do dictionary": "Posso ser o primeiro valor do dictionary?",
-                                                        "segundo valor do dictionary": "Sim, claro que pode."],
-                             randomClosure: { useParameter in
-                                                print(useParameter)
-                             })
+useFunctionWithManyArguments(
+    randomStringArgument: "Esse é um argumento do tipo String",
+    randomArrayArgument: [
+        "Esse é o primeiro argumeto de um array",
+        "Poderia esse ser o segundo argumento do array?"],
+    randomDictionaryArgument: [
+        "primeiro valor do dictionary": "Posso ser o primeiro valor do dictionary?",
+        "segundo valor do dictionary": "Sim, claro que pode."],
+    randomClosure: { useParameter in
+        print(useParameter)
+})
 
 
 // Errado
